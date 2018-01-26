@@ -3,3 +3,17 @@ SELECT * FROM salesman;
 
 2.SQL: Display a given string:
 Write a query to display a string "This is SQL Exercise, Practice and Solution".
+SELECT 'This is SQL Exercise, Practice and Solution';
+
+3.SQL: Display numbers in columns：
+Write a query to display three numbers in three columns.
+SELECT 1, 5, 10;
+
+4.SQL: Display sum of two numbers
+Write a query to display sum of two numbers 10 and 15.
+SELECT 10 + 15;
+
+5.SQL: Display the result of an arithmetic simplification
+Write a query to display the result of an arithmetic simplification.
+SELECT 10 + 20/4*3;
+
