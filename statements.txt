@@ -30,3 +30,17 @@ SELECT ord_no, purch_amt, salesman_id FROM orders ORDER BY salesman_id, ord_no;
 Write a query which will retrieve the values of salesman id of all salesmen, getting orders from the customers in orders table without any repeats.
 SELECT DISTINCT salesman_id FROM orders;
 
+9.SQL: Select specified columns with where clause
+Write a query to display names and city of salesman, who belongs to the city of Paris. 
+SELECT name,city FROM salesman WHERE city = 'Paris';
+
+10.SQL: Select all columns against a specified condition
+Write a SQL statement to display all the information for those customers with a grade of 200.
+SELECT * FROM customer WHERE grade = 200;
+
+11.Select order number, order date and the purchase amount for each order which will be delivered by a specified salesman
+Write a sql query to display the order number followed by order date and the purchase amount for each order which will be delivered by the salesman who is holding the ID 5001.
+SELECT ord_no, ord_date, purch_amt FROM orders WHERE salesman_id = 5001;
+
+
+
