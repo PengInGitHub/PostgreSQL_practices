@@ -1,4 +1,5 @@
-1.Write a SQL statement to display all the information of all salesmen.
+1.SQL: Select all the columns from a table
+Write a SQL statement to display all the information of all salesmen.
 SELECT * FROM salesman;
 
 2.SQL: Display a given string:
@@ -16,4 +17,12 @@ SELECT 10 + 15;
 5.SQL: Display the result of an arithmetic simplification
 Write a query to display the result of an arithmetic simplification.
 SELECT 10 + 20/4*3;
+
+6.SQL: Select specific columns from a table
+Write a SQL statement to display specific columns like name and commission for all the salesmen.
+SELECT name, commission FROM salesman;
+
+7.SQL: Select columns in different order
+Write a query to display salesman_id, salesman name, order date, order no, and purchase amount from orders table.
+SELECT ord_no, purch_amt, salesman_id FROM orders ORDER BY salesman_id, ord_no;
 
