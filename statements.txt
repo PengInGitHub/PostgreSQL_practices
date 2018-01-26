@@ -1,2 +1,5 @@
-#Write a SQL statement to display all the information of all salesmen.
-select * from salesman;
+1.Write a SQL statement to display all the information of all salesmen.
+SELECT * FROM salesman;
+
+2.SQL: Display a given string:
+Write a query to display a string "This is SQL Exercise, Practice and Solution".
