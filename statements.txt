@@ -26,3 +26,7 @@ SELECT name, commission FROM salesman;
 Write a query to display salesman_id, salesman name, order date, order no, and purchase amount from orders table.
 SELECT ord_no, purch_amt, salesman_id FROM orders ORDER BY salesman_id, ord_no;
 
+8.SQL: Select distinct values from a table
+Write a query which will retrieve the values of salesman id of all salesmen, getting orders from the customers in orders table without any repeats.
+SELECT DISTINCT salesman_id FROM orders;
+
