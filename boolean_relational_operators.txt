@@ -1,0 +1,7 @@
+1.Write a query to display all customers with a grade above 100. 
+SELECT * FROM customer WHERE grade>100;
+
+2.Write a query statement to display all customers in New York who have a grade value above 100.
+SELECT * FROM customer WHERE grade>100 AND city='New York';
+
+3. Write a SQL statement to display all customers, who are either belongs to the city New York or had a grade above 100.  
