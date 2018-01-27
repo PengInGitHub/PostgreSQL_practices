@@ -11,3 +11,10 @@ SELECT * FROM customer WHERE grade>100 OR city='New York';
 SELECT * FROM customer WHERE grade>100 OR NOT city='New York';
 
 5.Write a SQL query to display those customers who are neither belongs to the city New York nor grade value is more than 100.
+SELECT * FROM customer WHERE NOT(grade>100 OR city='New York');
+
+6. Write a SQL statement to display either those orders which are not issued on date 2012-09-10 and issued by the salesman whose ID is 505 and below or those orders which purchase amount is 1000.00 and below. 
+SELECT * FROM orders WHERE NOT ((ord_date='2012-09-10' AND salesman_id>505) OR purch_amt>1000);
+
+7.Write a SQL statement to display salesman_id, name, city and commission who gets the commission within the range more than 0.10% and less than 0.12%.
+SELECT salesman_id, name, city, commission FROM salesman WHERE commission>0.10 AND commission<0.12 ;
