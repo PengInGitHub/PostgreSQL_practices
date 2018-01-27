@@ -50,5 +50,10 @@ SELECT * FROM nobel_win where year = 1970;
 Write a SQL query to know the winner of the 1971 prize for Literature.
 SELECT * FROM nobel_win where year = 1971 AND subject = 'Literature' ;
 
+14.Write a SQL query to display the year and subject that won 'Dennis Gabor' his prize. 
+SELECT year, subject FROM nobel_win where winner = 'Dennis Gabor' ;
 
+15.SQL: Filter the name of the 'Physics' winners since the year 1950
+SELECT winner FROM nobel_win where year>= 1950 AND subject= 'Physics' ;
 
+16.
