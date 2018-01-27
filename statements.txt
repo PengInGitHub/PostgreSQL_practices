@@ -86,4 +86,8 @@ SELECT * FROM nobel_win WHERE year=1970 ORDER BY CASE WHEN subject IN ('Chemistr
 25. Write a SQL query to find all the products with a price between Rs.200 and Rs.600.
 SELECT * FROM item_mast WHERE PRO_PRICE BETWEEN 200 AND 600;
 
-26.
+26. Write a SQL query to calculate the average price of all products of the manufacturer which code is l6. 
+SELECT AVG(pro_price) FROM item_mast WHERE prO_com=16;
+
+27. Write a SQL query to find the item name and price in Rs. 
+SELECT PRO_NAME AS "ITEM NAME", PRO_PRICE AS "PRICE IN RS" FROM item_mast;
