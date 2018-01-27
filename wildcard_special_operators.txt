@@ -8,4 +8,7 @@ SELECT * FROM salesman WHERE city IN ('Paris','Rome');
 SELECT * FROM salesman WHERE city NOT IN ('Paris','Rome');
 
 4. Write a query to sort out those customers with all information whose ID value is within any of 3007, 3008 and 3009. 
+SELECT * FROM customer WHERE customer_id IN (3007,3008,3009);
 
+5. Write a SQL statement to find those salesmen with all information who gets the commission within a range of 0.12 and 0.14.
+SELECT * FROM salesman WHERE commission BETWEEN 0.12 AND 0.14;
