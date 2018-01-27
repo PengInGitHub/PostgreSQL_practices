@@ -105,3 +105,7 @@ SELECT pro_price, pro_name FROM item_mast WHERE pro_price=(SELECT MIN(pro_price)
 SELECT DISTINCT emp_lname FROM emp_details;
 
 32. Write a query in SQL to find the data of employees whose last name is 'Snares'. 
+SELECT * FROM emp_details WHERE emp_lname='Snares';
+
+33. Write a query in SQL to display all the data of employees that work in the department 57. 
+SELECT * FROM emp_details WHERE emp_dept=57;
