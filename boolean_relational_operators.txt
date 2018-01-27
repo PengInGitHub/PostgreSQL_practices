@@ -5,3 +5,9 @@ SELECT * FROM customer WHERE grade>100;
 SELECT * FROM customer WHERE grade>100 AND city='New York';
 
 3. Write a SQL statement to display all customers, who are either belongs to the city New York or had a grade above 100.  
+SELECT * FROM customer WHERE grade>100 OR city='New York';
+
+4. Write a SQL statement to display all the customers, who are either belongs to the city New York or not had a grade above 100.
+SELECT * FROM customer WHERE grade>100 OR NOT city='New York';
+
+5.Write a SQL query to display those customers who are neither belongs to the city New York nor grade value is more than 100.
