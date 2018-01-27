@@ -73,3 +73,9 @@ SELECT * FROM nobel_win where year = 1970 AND subject NOT IN ('Physiology', 'Eco
 
 21.SQL: Show the winners of a 'Physiology' prize in an early year before 1971 together with winners of a 'Peace' prize in a later year on and after the 1974
 SELECT * FROM nobel_win WHERE (subject = 'Physiology' AND year<1971) UNION SELECT * FROM nobel_win WHERE (subject='Peace' AND year>=1974);
+
+22.Write a SQL query to find all details of the prize won by Johannes Georg Bednorz.
+SELECT * FROM nobel_win WHERE winner='Johannes Georg Bednorz';
+
+23. Write a SQL query to find all the details of the nobel winners for the subject not started with the letter 'P' and arranged the list as the most recent comes first, then by name in order.
+SELECT * FROM nobel_win WHERE subject NOT LIKE 'P%' ORDER BY year DESC, winner;
