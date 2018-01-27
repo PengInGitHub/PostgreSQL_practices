@@ -91,3 +91,9 @@ SELECT AVG(pro_price) FROM item_mast WHERE prO_com=16;
 
 27. Write a SQL query to find the item name and price in Rs. 
 SELECT PRO_NAME AS "ITEM NAME", PRO_PRICE AS "PRICE IN RS" FROM item_mast;
+
+28.Write a SQL query to display the name and price of all the items with a price is equal or more than Rs.250, and the list contain the larger price first and then by name in ascending order.  
+SELECT pro_name, pro_price FROM item_mast WHERE pro_price>=250 ORDER BY pro_price DESC, pro_name;
+
+29. Write a SQL query to display the average price of the items for each company, showing only the company code.
+SELECT AVG(pro_price), pro_com FROM item_mast  GROUP BY pro_com;
