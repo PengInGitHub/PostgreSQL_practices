@@ -42,5 +42,13 @@ SELECT * FROM customer WHERE grade = 200;
 Write a sql query to display the order number followed by order date and the purchase amount for each order which will be delivered by the salesman who is holding the ID 5001.
 SELECT ord_no, ord_date, purch_amt FROM orders WHERE salesman_id = 5001;
 
+12.SQL: Display the Nobel prizes for 1970
+Write a SQL query to display the Nobel prizes for 1970.
+SELECT * FROM nobel_win where year = 1970;
+
+13.SQL: Who won the 1971 prize for Literature
+Write a SQL query to know the winner of the 1971 prize for Literature.
+SELECT * FROM nobel_win where year = 1971 AND subject = 'Literature' ;
+
 
 
