@@ -67,3 +67,9 @@ SELECT * FROM nobel_win where winner LIKE 'Louis%';
 
 19.SQL: Show all the winners in Physics for 1970 together with the winner of Economics for 1971
 SELECT winner FROM nobel_win WHERE(subject = 'Physics' AND year = 1970) UNION SELECT winner FROM nobel_win WHERE(subject = 'Economics' AND year = 1971);
+
+20.SQL: Show all the winners of nobel prize in the year 1970 except the subject Physiology and Economics
+SELECT * FROM nobel_win where year = 1970 AND subject NOT IN ('Physiology', 'Economics');
+
+21.SQL: Show the winners of a 'Physiology' prize in an early year before 1971 together with winners of a 'Peace' prize in a later year on and after the 1974
+SELECT * FROM nobel_win WHERE (subject = 'Physiology' AND year<1971) UNION SELECT * FROM nobel_win WHERE (subject='Peace' AND year>=1974);
