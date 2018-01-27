@@ -24,3 +24,12 @@ SELECT * FROM orders WHERE (purch_amt<200 OR NOT (ord_date>='2012-02-10' AND cus
 
 9. Display all in reverse, where order dates equal to a specified date or customer id greater than a specified number and purchase amount less than a specified amount.
 SELECT * FROM orders WHERE NOT(ord_date='2012-09-10' OR customer_id>3000 AND purch_amt<100);
+
+10. Write a SQL query to display order number, purchase amount, archived, the unachieved percentage for those order which exceeds the 50% of the target value of 6000. 
+SELECT ord_no, purch_amt, purch_amt/6000*100 AS "achieved", (6000-purch_amt)/6000*100 AS "unachieved" FROM orders WHERE purch_amt>(6000*0.5);
+
+11. Write a query in SQL to find the data of employees whose last name is Dosni or Mardy. 
+SELECT * FROM emp_details WHERE emp_lname='Dosni' OR emp_lname='Mardy'; 
+
+12. Write a query in SQL to display all the data of employees that work in department 47 or department 63.
+SELECT * FROM emp_details WHERE emp_dept=47 OR emp_dept=63; 
