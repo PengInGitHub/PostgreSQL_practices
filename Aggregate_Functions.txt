@@ -10,4 +10,10 @@ SELECT COUNT (DISTINCT salesmaN_id)  FROM orders ;
 4. Write a SQL statement know how many customer have listed their names. 
 SELECT COUNT (*)  FROM customer ;
 
+5. Write a SQL statement find the number of customers who gets at least a gradation for his/her performance.
+SELECT COUNT(ALL grade)  FROM customer ;
+
+6. Write a SQL statement to get the maximum purchase amount of all the orders. 
+SELECT MAX(purch_amt)  FROM orders;
+
 
