@@ -63,3 +63,9 @@ SELECT AVG(pro_price) FROM item_mast;
 
 22. Write a SQL query to find the number of products with a price more than or equal to Rs.350. 
 SELECT count(pro_id) FROM item_mast WHERE PRO_PRICE>=350;
+
+23. Write a SQL query to display the average price of each company's products, along with their code. 
+SELECT pro_com,AVG(pro_price) FROM item_mast GROUP BY pro_com;
+
+24. Write a query in SQL to find the sum of the allotment amount of all departments. 
+SELECT SUM(dpt_allotment) FROM emp_department; 
