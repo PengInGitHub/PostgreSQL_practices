@@ -33,3 +33,10 @@ SELECT * FROM salesman WHERE name LIKE 'N__l%';
 
 12. Write a SQL statement to find those rows from the table testtable which contain the escape character underscore ( _ ) in its column 'col1'.
 SELECT * FROM testtable WHERE col1 LIKE '%/_%' ESCAPE '/';
+
+13. Write a SQL statement to find those rows from the table testtable which does not contain the character underscore ( _ ) in its column 'col1'.
+SELECT * FROM testtable WHERE col1 NOT LIKE '%/_%' ESCAPE '/';
+
+14. Write a SQL statement to find those rows from the table testtable which contain the escape character ( / ) in its column 'col1'.  
+SELECT * FROM testtable WHERE col1 LIKE '%//%' ESCAPE '/';
+
