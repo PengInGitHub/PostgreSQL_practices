@@ -4,3 +4,10 @@ SELECT SUM(purch_amt)  FROM orders ;
 2. Write a SQL statement to find the average purchase amount of all orders. 
 SELECT AVG(purch_amt)  FROM orders ;
 
+3. Write a SQL statement to find the number of salesmen currently listing for all of their customers.
+SELECT COUNT (DISTINCT salesmaN_id)  FROM orders ;
+
+4. Write a SQL statement know how many customer have listed their names. 
+SELECT COUNT (*)  FROM customer ;
+
+
