@@ -4,3 +4,8 @@ SELECT salesman_id,name,city,commission*100,'%'FROM salesman;
 2. Write a SQL statement to find out the number of orders booked for each day and display it in such a format like "For 2001-10-10 there are 15 orders".
 SELECT 'For ', ord_date, 'there are ', COUNT(DISTINCT ord_no), ' orders' FROM orders GROUP BY ord_date;
 
+3. Write a query to display the orders according to the order number arranged by ascending order. 
+SELECT * FROM orders ORDER BY ord_no;
+
+4. Write a SQL statement to arrange the orders according to the order date in such a manner that the latest date will come first then previous dates. 
+SELECT * FROM orders ORDER BY ord_date DESC;
