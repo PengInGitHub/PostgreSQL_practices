@@ -19,4 +19,11 @@ SELECT * FROM orders WHERE (purch_amt BETWEEN 500 AND 4000) AND NOT (purch_amt I
 7. Write a SQL statement to find those salesmen with all other information and name started with any latter within 'A' and 'K'. 
 SELECT * FROM salesman WHERE name BETWEEN 'A'AND 'L';
 
+8. Write a SQL statement to find those salesmen with all other information and name started with other than any latter within 'A' and 'L'. 
+SELECT * FROM salesman WHERE name NOT BETWEEN 'A'AND 'L';
 
+9. Write a SQL statement to find that customer with all information whose name begin with the letter 'B'. 
+SELECT * FROM customer WHERE cust_name LIKE 'B%';
+
+10. Write a SQL statement to find all those customers with all information whose names are ending with the letter 'n'.
+SELECT * FROM customer WHERE cust_name LIKE '%n';
