@@ -40,3 +40,9 @@ SELECT * FROM testtable WHERE col1 NOT LIKE '%/_%' ESCAPE '/';
 14. Write a SQL statement to find those rows from the table testtable which contain the escape character ( / ) in its column 'col1'.  
 SELECT * FROM testtable WHERE col1 LIKE '%//%' ESCAPE '/';
 
+15. Write a SQL statement to find those rows from the table testtable which does not contain the escape character ( / ) in its column 'col1'.
+SELECT * FROM testtable WHERE col1 NOT LIKE '%//%' ESCAPE '/';
+
+16. Write a SQL statement to find those rows from the table testtable which contain the string ( _/ ) in its column 'col1'. 
+SELECT * FROM testtable WHERE col1  LIKE '%/_//%'ESCAPE '/';
+
