@@ -15,3 +15,10 @@ SELECT * FROM orders ORDER BY ord_date, purch_amt DESC;
 
 6. Write a SQL statement to display the customer name, city, and grade, etc. and the display will be arranged according to the smallest customer ID.
 SELECT * FROM orders ORDER BY customer_id;
+
+7. Write a SQL statement to make a report with salesman ID, order date and highest purchase amount in such an arrangement that, the smallest salesman ID will come first along with their smallest order date.
+SELECT salesman_id,ord_date,MAX(purch_amt) FROM orders GROUP BY salesman_id,ord_date ORDER BY salesman_id,ord_date;
+
+8. Write a SQL statement to display customer name, city and grade in such a manner that, the customer holding highest grade will come first. 
+SELECT cust_name,city,grade FROM customer ORDER BY grade DESC; 
+
