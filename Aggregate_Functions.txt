@@ -1,1 +1,6 @@
+1. Write a SQL statement to find the total purchase amount of all orders. 
+SELECT SUM(purch_amt)  FROM orders ;
+
+2. Write a SQL statement to find the average purchase amount of all orders. 
+SELECT AVG(purch_amt)  FROM orders ;
 
