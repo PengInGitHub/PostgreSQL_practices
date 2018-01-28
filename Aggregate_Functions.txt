@@ -16,4 +16,10 @@ SELECT COUNT(ALL grade)  FROM customer ;
 6. Write a SQL statement to get the maximum purchase amount of all the orders. 
 SELECT MAX(purch_amt)  FROM orders;
 
+7. Write a SQL statement to get the minimum purchase amount of all the orders. 
+SELECT MIN(purch_amt)  FROM orders;
+
+8. Write a SQL statement which selects the highest grade for each of the cities of the customers.
+SELECT MAX(grade), city  FROM customer GROUP BY city;
+
 
