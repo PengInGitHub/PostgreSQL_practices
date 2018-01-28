@@ -51,3 +51,10 @@ SELECT * FROM testtable WHERE col1 NOT LIKE '%/_//%'ESCAPE '/';
 
 18. Write a SQL statement to find those rows from the table testtable which contain the character ( % ) in its column 'col1'.
 SELECT * FROM testtable WHERE col1 LIKE '%/%%'ESCAPE '/';
+
+19. Write a SQL statement to find those rows from the table testtable which does not contain the character ( % ) in its column 'col1'. 
+SELECT * FROM testtable WHERE col1 NOT LIKE '%/%%'ESCAPE '/';
+
+20. Write a SQL statement to find that customer with all information who does not get any grade except NULL.
+SELECT * FROM customer WHERE grade IS NULL;
+
