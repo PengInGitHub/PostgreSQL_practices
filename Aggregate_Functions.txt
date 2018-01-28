@@ -51,3 +51,11 @@ SELECT salesman_id,MAX(purch_amt) FROM orders GROUP BY salesman_id HAVING salesm
 
 18. Write a SQL statement that counts all orders for a date August 17th, 2012. 
 SELECT COUNT(*) FROM orders WHERE ord_date='2012-08-17';
+
+19. Write a SQL statement that count the number of salesmen for whom no city is specified. Note that there may be spaces or no spaces in the city column if no city is specified. 
+SELECT COUNT(*) FROM salesman WHERE city IS NOT NULL;
+
+20. Write a query that counts the number of salesmen with their order date and ID registering orders for each day.  
+SELECT ord_date,salesman_id,COUNT(*) FROM orders GROUP BY salesman_id, ord_date;
+
+21. Write a SQL query to calculate the average price of all the products.
