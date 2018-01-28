@@ -69,3 +69,6 @@ SELECT pro_com,AVG(pro_price) FROM item_mast GROUP BY pro_com;
 
 24. Write a query in SQL to find the sum of the allotment amount of all departments. 
 SELECT SUM(dpt_allotment) FROM emp_department; 
+
+25. Write a query in SQL to find the number of employees in each department along with the department code.
+SELECT COUNT(*) FROM emp_details GROUP BY emp_dept;
