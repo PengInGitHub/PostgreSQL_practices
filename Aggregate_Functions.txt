@@ -22,4 +22,10 @@ SELECT MIN(purch_amt)  FROM orders;
 8. Write a SQL statement which selects the highest grade for each of the cities of the customers.
 SELECT MAX(grade), city  FROM customer GROUP BY city;
 
+9. Write a SQL statement to find the highest purchase amount ordered by the each customer with their ID and highest purchase amount. 
+SELECT MAX(purch_amt) FROM orders  GROUP BY customer_id;
 
+10. Write a SQL statement to find the highest purchase amount ordered by the each customer on a particular date with their ID, order date and highest purchase amount. 
+SELECT customer_id, ord_date ,MAX(purch_amt) FROM orders GROUP BY customer_id, ord_date;
+
+11. Write a SQL statement to find the highest purchase amount on a date '2012-08-17' for each salesman with their ID.
