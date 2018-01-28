@@ -12,3 +12,11 @@ SELECT * FROM customer WHERE customer_id IN (3007,3008,3009);
 
 5. Write a SQL statement to find those salesmen with all information who gets the commission within a range of 0.12 and 0.14.
 SELECT * FROM salesman WHERE commission BETWEEN 0.12 AND 0.14;
+
+6. Write a query to filter all those orders with all information which purchase amount value is within the range 500 and 4000 except those orders of purchase amount value 948.50 and 1983.43. 
+SELECT * FROM orders WHERE (purch_amt BETWEEN 500 AND 4000) AND NOT (purch_amt IN (948.5, 1983.43));
+
+7. Write a SQL statement to find those salesmen with all other information and name started with any latter within 'A' and 'K'. 
+SELECT * FROM salesman WHERE name BETWEEN 'A'AND 'L';
+
+
