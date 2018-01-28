@@ -40,3 +40,8 @@ SELECT customer_id, ord_date,MAX(purch_amt) FROM orders GROUP BY customer_id, or
 14. Write a SQL statement to find the highest purchase amount with their ID and order date, for only those customers who have a higher purchase amount in a day is within the list 2000, 3000, 5760 and 6000.
 SELECT customer_id, ord_date,MAX(purch_amt) FROM orders GROUP BY customer_id, ord_date HAVING MAX(purch_amt) IN (2000,3000,5760,6000);
 
+15. Write a SQL statement to find the highest purchase amount with their ID, for only those customers whose ID is within the range 3002 and 3007. 
+SELECT customer_id, MAX(purch_amt) FROM orders WHERE customer_id BETWEEN 3002 AND 3007 GROUP BY customer_id;
+
+16. Write a SQL statement to display customer details (ID and purchase amount) whose IDs are within the range 3002 and 3007 and highest purchase amount is more than 1000.
+SELECT customer_id,MAX(purch_amt) FROM orders WHERE customer_id BETWEEN 3002 and 3007 GROUP BY customer_id HAVING MAX(purch_amt) > 2000;
