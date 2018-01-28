@@ -9,3 +9,9 @@ SELECT * FROM orders ORDER BY ord_no;
 
 4. Write a SQL statement to arrange the orders according to the order date in such a manner that the latest date will come first then previous dates. 
 SELECT * FROM orders ORDER BY ord_date DESC;
+
+5. Write a SQL statement to display the orders with all information in such a manner that, the older order date will come first and the highest purchase amount of same day will come first. 
+SELECT * FROM orders ORDER BY ord_date, purch_amt DESC;
+
+6. Write a SQL statement to display the customer name, city, and grade, etc. and the display will be arranged according to the smallest customer ID.
+SELECT * FROM orders ORDER BY customer_id;
