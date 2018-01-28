@@ -27,3 +27,9 @@ SELECT * FROM customer WHERE cust_name LIKE 'B%';
 
 10. Write a SQL statement to find all those customers with all information whose names are ending with the letter 'n'.
 SELECT * FROM customer WHERE cust_name LIKE '%n';
+
+11. Write a SQL statement to find those salesmen with all information whose name containing the 1st character is 'N' and the 4th character is 'l' and rests may be any character.
+SELECT * FROM salesman WHERE name LIKE 'N__l%';
+
+12. Write a SQL statement to find those rows from the table testtable which contain the escape character underscore ( _ ) in its column 'col1'.
+SELECT * FROM testtable WHERE col1 LIKE '%/_%' ESCAPE '/';
