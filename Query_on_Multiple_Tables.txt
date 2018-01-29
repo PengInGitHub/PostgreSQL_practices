@@ -10,5 +10,8 @@ SELECT * FROM customer,salesman,orders WHERE orders.salesman_id=salesman.salesma
 4. Write a SQL statement that finds out each order number followed by the name of the customers who made the order. 
 SELECT orders.ord_no,customer.cust_name FROM customer,orders WHERE orders.customer_id=customer.customer_id ORDER BY orders.ord_no; 
 
+5. Write a SQL statement that sorts out the customer and their grade who made an order. Each of the customers must have a grade and served by at least a salesman, who belongs to a city. 
+SELECT customer.cust_name,customer.grade FROM customer,orders,salesman WHERE customer.customer_id=orders.customer_id AND customer.salesman_id=salesman.salesman_id AND salesman.city IS NOT NULL AND customer.grade IS NOT NULL;
+
 
 
