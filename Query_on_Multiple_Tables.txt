@@ -16,5 +16,8 @@ SELECT customer.cust_name,customer.grade FROM customer,orders,salesman WHERE cus
 6. Write a query that produces all customers with their name, city, salesman and commission, who served by a salesman and the salesman works at a rate of the commission within 12% to 14%. 
 SELECT * FROM customer, salesman WHERE customer.salesman_id=salesman.salesman_id AND salesman.commission BETWEEN 0.12 AND 0.14;
 
+7. Write a SQL statement that produces all orders with the order number, customer name, commission rate and earned commission amount for those customers who carry their grade more than 200 and served by an existing salesman. 
+SELECT orders.ord_no,customer.cust_name,salesman.commission,orders.purch_amt*salesman.commission AS "Comission Amount" FROM orders,customer,salesman WHERE customer.grade>=200 AND customer.salesman_id=salesman.salesman_id AND customer.customer_id=orders.customer_id;
+
 
 
