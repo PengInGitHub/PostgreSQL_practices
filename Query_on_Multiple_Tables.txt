@@ -13,5 +13,8 @@ SELECT orders.ord_no,customer.cust_name FROM customer,orders WHERE orders.custom
 5. Write a SQL statement that sorts out the customer and their grade who made an order. Each of the customers must have a grade and served by at least a salesman, who belongs to a city. 
 SELECT customer.cust_name,customer.grade FROM customer,orders,salesman WHERE customer.customer_id=orders.customer_id AND customer.salesman_id=salesman.salesman_id AND salesman.city IS NOT NULL AND customer.grade IS NOT NULL;
 
+6. Write a query that produces all customers with their name, city, salesman and commission, who served by a salesman and the salesman works at a rate of the commission within 12% to 14%. 
+SELECT * FROM customer, salesman WHERE customer.salesman_id=salesman.salesman_id AND salesman.commission BETWEEN 0.12 AND 0.14;
+
 
 
