@@ -4,3 +4,11 @@ SELECT customer.cust_name, salesman.name, salesman.city FROM salesman, customer 
 2. Write a SQL statement to find the names of all customers along with the salesmen who works for them. 
 SELECT customer.cust_name, salesman.name FROM salesman, customer WHERE salesman.salesman_id=customer.salesman_id;
 
+3. Write a SQL statement to display all those orders by the customers not located in the same cities where their salesmen live.
+SELECT * FROM customer,salesman,orders WHERE orders.salesman_id=salesman.salesman_id AND orders.customer_id=customer.customer_id AND customer.city<>salesman.city;
+
+4. Write a SQL statement that finds out each order number followed by the name of the customers who made the order. 
+SELECT orders.ord_no,customer.cust_name FROM customer,orders WHERE orders.customer_id=customer.customer_id ORDER BY orders.ord_no; 
+
+
+
