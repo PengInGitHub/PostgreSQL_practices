@@ -35,3 +35,6 @@ SELECT a.cust_name, a.city,b.ord_no,b.ord_date,b.purch_amt AS "Salesman Name" FR
 12. Write a SQL statement to make a list in ascending order for the salesmen who works either for one or more customer or not yet join under any of the customers.
 SELECT a.cust_name,b.name FROM customer a RiGHT JOIN salesman b ON b.salesman_id=a.salesman_id ORDER BY b.salesman_id;
 
+13. Write a SQL statement to make a list for the salesmen who works either for one or more customer or not yet join under any of the customers who placed either one or more orders or no order to their supplier. 
+SELECT b.name FROM customer a RIGHT JOIN salesman b ON a.salesman_id=b.salesman_id RIGHT JOIN orders c ON c.customer_id=a.customer_id;
+
