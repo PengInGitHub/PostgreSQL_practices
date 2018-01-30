@@ -17,3 +17,7 @@ SELECT a.cust_name,b.name,b.commission FROM customer a INNER JOIN salesman b ON 
 6. Write a SQL statement to find the details of a order i.e. order number, order date, amount of order, which customer gives the order and which salesman works for that customer and how much commission he gets for an order. 
 SELECT * FROM orders a INNER JOIN customer b ON a.customer_id=b.customer_id INNER JOIN salesman c ON a.salesman_id=c.salesman_id;
 
+7. Write a SQL statement to make a join on the tables salesman, customer and orders in such a form that the same column of each table will appear once and only the relational rows will come. 
+SELECT * FROM orders NATURAL JOIN customer NATURAL JOIN salesman;
+
+8. Write a SQL statement to make a list in ascending order for the customer who works either through a salesman or by own.
