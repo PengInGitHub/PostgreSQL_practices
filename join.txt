@@ -21,3 +21,4 @@ SELECT * FROM orders a INNER JOIN customer b ON a.customer_id=b.customer_id INNE
 SELECT * FROM orders NATURAL JOIN customer NATURAL JOIN salesman;
 
 8. Write a SQL statement to make a list in ascending order for the customer who works either through a salesman or by own.
+SELECT a.cust_name, a.city,a.grade,b.city,b.name AS "Salesman Name" FROM customer a LEFT JOIN salesman b ON a.salesman_id=b.salesman_id ORDER BY a.customer_id ;
