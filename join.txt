@@ -8,3 +8,5 @@ SELECT a.ord_no,b.cust_name,a.purch_amt FROM orders a, customer b WHERE a.custom
 SELECT a.cust_name,b.name,b.city,b.commission FROM customer a,salesman b WHERE a.salesman_id=b.salesman_id;
 SELECT a.cust_name,b.name,b.city,b.commission FROM customer a INNER JOIN salesman b ON a.salesman_id=b.salesman_id;
 
+4. Write a SQL statement to find the list of customers who appointed a salesman for their jobs who gets a commission from the company is more than 12%. 
+SELECT a.cust_name,b.name,b.commission FROM customer a INNER JOIN salesman b ON a.salesman_id=b.salesman_id WHERE b.commission>0.12;
