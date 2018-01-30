@@ -1,3 +1,6 @@
 1. Write a SQL statement to prepare a list with salesman name, customer name and their cities for the salesmen and customer who belongs to the same city. 
 SELECT * FROM customer,salesman WHERE customer.city=salesman.city;
 
+2. Write a SQL statement to make a list with order no, purchase amount, customer name and their cities for those orders which order amount between 500 and 2000. 
+SELECT a.ord_no,b.cust_name,a.purch_amt FROM orders a, customer b WHERE a.customer_id=b.customer_id AND a.purch_amt BETWEEN 500 AND 2000;
+
