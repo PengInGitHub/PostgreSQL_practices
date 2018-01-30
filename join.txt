@@ -10,3 +10,6 @@ SELECT a.cust_name,b.name,b.city,b.commission FROM customer a INNER JOIN salesma
 
 4. Write a SQL statement to find the list of customers who appointed a salesman for their jobs who gets a commission from the company is more than 12%. 
 SELECT a.cust_name,b.name,b.commission FROM customer a INNER JOIN salesman b ON a.salesman_id=b.salesman_id WHERE b.commission>0.12;
+
+5. Write a SQL statement to find the list of customers who appointed a salesman for their jobs who does not live in the same city where their customer lives, and gets a commission is above 12% .
+SELECT a.cust_name,b.name,b.commission FROM customer a INNER JOIN salesman b ON a.salesman_id=b.salesman_id WHERE b.commission>0.12 AND a.city<>b.city;
