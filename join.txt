@@ -22,3 +22,8 @@ SELECT * FROM orders NATURAL JOIN customer NATURAL JOIN salesman;
 
 8. Write a SQL statement to make a list in ascending order for the customer who works either through a salesman or by own.
 SELECT a.cust_name, a.city,a.grade,b.city,b.name AS "Salesman Name" FROM customer a LEFT JOIN salesman b ON a.salesman_id=b.salesman_id ORDER BY a.customer_id ;
+
+9. Write a SQL statement to make a list in ascending order for the customer who holds a grade less than 300 and works either through a salesman or by own. 
+SELECT a.cust_name, a.city,a.grade,b.city,b.name AS "Salesman Name" FROM customer a LEFT JOIN salesman b ON a.salesman_id=b.salesman_id WHERE a.grade<300 ORDER BY a.customer_id ;
+
+10. Write a SQL statement to make a report with customer name, city, order number, order date, and order amount in ascending order according to the order date to find that either any of the existing customers have placed no order or placed one or more orders.
