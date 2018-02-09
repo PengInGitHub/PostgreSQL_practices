@@ -7,3 +7,4 @@
 //The SQL CROSS JOIN produces a result set which is the number of rows in the first table multiplied by the number of rows in the second table if no WHERE clause is used along with CROSS JOIN.
 //This kind of result is called as Cartesian Product.
 
+SELECT * FROM salesman CROSS JOIN customer;
